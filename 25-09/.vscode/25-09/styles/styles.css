@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*
+#800000
+#a20202
+#bb0b
+*/
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #7b0000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    height: 80%;
+    background-color: #950000;
+
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(255, 0, 0);
+
+    display: flex;
+
+    padding: 15px;
+/* Com este comando apenas ps elementos dentro do container são mostrados */
+    overflow: hidden;
+}
+
+.img,
+.login {
+    width: 50%;
+    height: 100%;
+
+}
+
+.img {
+    background-image: url("../images/crmengo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px whitesmoke;
+}
+
+.login {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+
+    padding-left: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login h1 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.login p {
+    color:rgb(255, 255, 255);
+}
+
+form{
+    margin-top: 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+form input {
+    /*Existem 4 paddings (top, right, bottom e left) */
+    /* No css para economizarmos linha podemos utilizar shortbands (atalhos) */
+    /* Shorthang é um comando que pode englobar vários, nesse caso, o comando padding engloba os 4 paddings possiveis */
+    /*padding: 10 px; --> Coloca 10px na parte superior (top), direita (right), inferior (bottom) e esquerda (left) */
+    /*padding: 10px 20px; --> Coloca 10px na parte superior (top) e inferior (bottom), 20px nas laterais (right e left) */
+    /*padding: 10px 20px 15px 40px; --> Coloca 10px na parte superior (top), 20px na direita (right), 15px inferior (bottom) e 40px na esquerda(left)  */
+    padding: 10px 20px;
+    background-color: #7b0000;
+    outline: none;
+    border: none;
+    color: aliceblue;
+    border-radius: 5px;
+}
+
+form input::placeholder {
+    color: aliceblue;
+}
+
+form #nome,
+form #Sobrenome {
+    width: calc(50% - 5px);
+}
+
+form #email,
+form #password {
+    width: 100%;
+}
+
+.button {
+    width: 100%;
+    color: #ffffff;
+    background-color: #7b0000;
+    border-radius: 10px;
+    padding: 10px 40px;
+}
+
+.containerRegister {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+.containerRegister hr {
+    width: 40%;
+    height: 1px;
+}
+
+.containerButtons {
+    width: 100%;
+
+    margin-top: 20px;
+
+    display: flex;
+    gap: 20px;
+}
+
+.register {
+    width: calc(50% - 10px);
+    padding: 15px, 40px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
